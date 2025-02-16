@@ -53,7 +53,7 @@ Use the `BLANK_README.md` to get started.
 
 
 ### Built With
-* [![JQuery][JQuery.com]][JQuery-url]
+* JQuery
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -80,12 +80,7 @@ to determine if water source is clean
 
 
 
-## Roadmap
 
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
