@@ -1,0 +1,134 @@
+body {
+    font-family: "outfit", inter; 
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; 
+    color: #333;
+  }
+  
+  h1, h2 {
+    color: #0056b3; 
+  }
+  
+  a {
+      color: #171717; 
+      text-decoration: none;
+  }
+  
+  .upper-layer {
+    position: sticky;
+    top: 0;
+    padding: 0px;
+    background-color: #fff;
+    border-bottom: 2px solid #ddd; 
+    display: flex;
+    align-items: center;
+    justify-content: left; 
+    z-index: 100;
+  }
+  
+  .contact {
+    align-content: right;
+    background-color: #313131;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: background-color 0.3 ease;
+    margin-right: 20px;
+  }
+  
+  .contact:hover {
+    background-color: #525252;
+  }
+ 
+  .page-tabs-left {
+    width: 200px;
+  }
+  
+  .page-tabs-right {
+    margin: 0; 
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    margin-right: 20px;
+
+  }
+  
+  .page-tabs-right:hover {
+    background-color: #f0f0f0;
+  }
+
+  .check {
+    align-content: flex-end;
+    background-color: #00b5d4;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: background-color 0.3 ease;
+    margin-right: 20px;
+  }
+
+  .check:hover {
+    background-color: #53dfff;
+  }
+ 
+  .logo {
+    width: 200px; 
+    display: block; 
+  }
+  
+
+  .main {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff; 
+    border-radius: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+
+  .back-to-top-button{
+    position:relative;
+    padding: 1rem 0;
+    padding-left: 660px;
+  }
+
+  button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+    text-align:center;
+    align-content: center;
+}
+
+  #main-page {
+    height: 400px; 
+    background-color: #e9ecef; 
+    text-align: left; 
+    padding:50px;
+    background-image: url("water-background.jpg");
+    color: white;
+    text-shadow: 2px 2px 4px #004d84;
+    font-size: 180%;
+    align-content: flex-end;
+  }
+  
+  #why-hydrocheck,#solution,#technology
+  {
+      padding: 30px;
+      background-color: #f8f9fa;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  footer {
+      text-align: center;
+      padding: 1rem 0;
+      background-color: #343a40;
+      color: #fff;
+      margin-top: 20px;
+  }
+
+

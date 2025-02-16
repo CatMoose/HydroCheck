@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HydroCheck - Water Safety Analysis</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href= "filtration.png" type="image" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("a").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+            window.location.hash = hash;
+          });
+        }
+      });
+    });
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style2.css">
+</head>
+  <body>
+    <header>
+            <body>
+                <div class="upper-layer">
+                  <div class="page-tabs-left"><a href="index.html">
+                    <img class="logo" src="logo.png"></a>
+                  </div>
+                  <div class="page-tabs-right">
+                    <a href="#why-hydrocheck">Why HydroCheck</a>
+                  </div>
+                  <div class="page-tabs-right">
+                    <a href="#solutions">Solutions</a>
+                  </div>
+                  <div class="page-tabs-right">
+                    <a href="#technology">Technology</a>
+                  </div>
+                  <div class="contact">
+                    <a href="contact.html" style="color: white">Contact Us</a>
+                  </div>
+                  <div class="check">
+                    <a href="check.html" style="color: white">Check Now</a>
+                  </div>
+                </div>
+    </header>
+
+    <main>
+        <section id="input-form">
+            <h1 style="font-size:200%; color:black; text-align: center">Water Quality Analyzer</h1>
+            <h2 style="text-align: center; font-size: 120%">Enter Water Quality Parameters</h2>
+            <form id="water-form">
+                <div class="form-group">
+                    <input type="number" id="ph" name="ph" min="0" max="14" step="0.1" placeholder="pH Value"
+                        required>
+                </div>
+                <div class="form-group">
+                    <input type="number" id="turbidity" name="turbidity" min="0" step="0.1" placeholder="Turbidity (NTU)"
+                        required>
+                </div>
+                <div class="form-group">
+                    <input type="number" id="heavy-metals" name="heavy-metals" min="0" step="0.01" placeholder="Heavy Metal Contamination (PPM)" required>
+                </div>
+                <div class="form-group">
+                    <input type="number" id="microplastic" name="microplastic" min="0" step="0.01" placeholder="Microplastic (PPM)" required>
+                </div>
+    
+                <button type="submit">Analyze Water</button>
+            </form>
+    
+            <div id="loading-bar-container" style="display: none">
+                <div id="loading-bar"></div>
+            </div>
+        </section>
+    
+        <section id="results" style="display: none">
+            <h2>Analysis Results</h2>
+            <div id="analysis-output">
+                <p id="safety-assessment"></p>
+                <div id="suggestions"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 HydroCheck. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

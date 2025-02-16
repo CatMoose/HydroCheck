@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HydroCheck - Home Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href= "filtration.png" type="image" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+ 
+      $("a").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+            window.location.hash = hash;
+          });
+        }
+      });
+    });
+  </script>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="upper-layer">
+    <div class="page-tabs-left"><a href="index.html">
+      <img class="logo" src="logo.png"></a>
+    </div>
+    <div class="page-tabs-right">
+      <a href="#why-hydrocheck">Why HydroCheck</a>
+    </div>
+    <div class="page-tabs-right">
+      <a href="#solutions">Solutions</a>
+    </div>
+    <div class="page-tabs-right">
+      <a href="#technology">Technology</a>
+    </div>
+    <div class="contact">
+      <a href="contact.html" style="color: white">Contact Us</a>
+    </div>
+    <div class="check">
+      <a href="check.html" style="color: white">Check Now</a>
+    </div>
+  </div>
+
+  <div class="main" id="main-page">
+    <h1 style="color:rgb(1, 1, 77)">Clean Water, Healthy Future</h1>
+    <p style="font-size:70%"">HydroCheck offers real-time, continuous detection system enabling water supplier and authorities to ensure the safety of the water</p>
+  </div>
+
+    <div class="main" id="why-hydrocheck">
+        <h2>Why HydroCheck?</h2>
+        <p>Some compelling reasons to choose HydroCheck...</p>
+    </div>
+
+  <div class="main" id="solutions">
+    <h2>Our Solutions</h2>
+    <p>Explore our innovative solutions for water quality management...</p>
+  </div>
+
+  <div class="main" id="technology">
+    <h2>Our Technology</h2>
+    <p>Learn about the cutting-edge technology behind our services...</p>
+  </div>
+  <div class="back-to-top-button">
+    <button class="buttons" id="Bottom">
+      <a href="#main-page">Back to Top</a>
+    </button>
+  </div>
+  <footer>
+      <p>© 2025 HydroCheck. All rights reserved.</p>
+  </footer>
+</body>
+</html>
