@@ -45,24 +45,24 @@ The goal of the system is to provide a transparency platform for civilians to ch
 
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 
 
 ### Built With
 * JQuery
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ## Getting Started
  download all the files and to run the HTML
 
-### Installation
+## Installation
 
 Download all the files from Github
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 
 
@@ -71,7 +71,7 @@ Download all the files from Github
 
 to determine if water source is clean
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 
 
