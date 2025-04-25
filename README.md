@@ -43,7 +43,7 @@ The goal of the system is to provide a transparency platform for civilians to ch
 
 
 
-Use the `BLANK_README.md` to get started.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
